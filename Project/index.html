@@ -4,21 +4,31 @@
 <head>
     <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/Bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div class="d-flex" id="wrapper">
+  <div class="bg-light border-right " id="sidebar-wrapper">
     <nav id="navbar".>
-        <header>JS Documentation</header>
-        <a href="#Introduction" class="nav-link">Introduction</a>
-        <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
-        <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
-        <a href="#Hello_world" class="nav-link">Hello world</a>
-        <a href="#Variables" class="nav-link">Variables</a>
+        <header class="sidebar-heading">JS Documentation</header>
+     <div class="list-group list-group-flush">
+        <a href="#Introduction" class="nav-link list-group-item list-group-item-action bg-light">Introduction</a>
+        <a href="#What_you_should_already_know" class="nav-link list-group-item list-group-item-action bg-light">What you should already know</a>
+        <a href="#JavaScript_and_Java" class="nav-link list-group-item list-group-item-action bg-light">JavaScript and Java</a>
+        <a href="#Hello_world" class="nav-link list-group-item list-group-item-action bg-light">Hello world</a>
+        <a href="#Variables" class="nav-link list-group-item list-group-item-action bg-light">Variables</a>
+    </div>
     </nav>
+    </div>
+
+    <div id="page-content-wrapper">
+        <div class="container">
     <main id="main-doc">
-        <section class="main-section" id="Introduction">
+        <section class="main-section m-5" id="Introduction">
             <header>Introduction</header>
 
             <p>
@@ -54,8 +64,8 @@
                 </li>
             </ul>
         </section>
-
-        <section class="main-section" id="What_you_should_already_know">
+      <br/>
+        <section class="main-section m-5" id="What_you_should_already_know">
             <header>What you should already know</header>
             <p>
                 This guide assumes you have the following basic background:</p>
@@ -70,7 +80,7 @@
             </p>
         </section>
 
-        <section class="main-section" id="JavaScript_and_Java">
+        <section class="main-section m-5" id="JavaScript_and_Java">
             <header>JavaScript and Java</header>
 
             <p>JavaScript and Java are similar in some ways but fundamentally different in some others. </p>
@@ -79,7 +89,7 @@
             <p>JavaScript follows most Java expression syntax, naming conventions and basic control-flow
                 constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
         </section>
-        <section class="main-section" id="Hello_world">
+        <section class="main-section m-5" id="Hello_world">
             <header>Hello world</header>
             <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript</p>
             <code>
@@ -88,7 +98,7 @@
             <code>greetMe("World");</code>
         </section>
 
-        <section class="main-section" id="Variables">
+        <section class="main-section m-5" id="Variables">
             <header>Variables</header>
             <p>You use variables as symbolic names for values in your application. The names of variables, called
                 identifiers, conform to certain rules.</p>
@@ -109,7 +119,9 @@
             <code>let y = 13.</code>
         </section>
     </main>
-
+        </div>
+    </div>
+</div>
     <script src="js/index.js"></script>
 </body>
 
